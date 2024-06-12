@@ -25,7 +25,7 @@ It can be one on one, one to many, many to many, many to one.
 
 
 ## Relational Model
-The most popular data model in DBMS is the Relational Model. It is more scientific a model than others. This model is based on first-order predicate logic and defines a table as an n-ary relation.
+The most popular data model in DBMS is the Relational Model. It is more scientific model than others. This model is based on first-order predicate logic and defines a table as an n-ary relation.
 
 ![image](https://github.com/rrairajeev/SQL/assets/169693667/93dcd07a-c0c4-45db-8af4-c70ed2a4882d)
 
@@ -60,3 +60,41 @@ Logical data is data about database, that is, it stores information about how da
 ## Physical Data Independence
 All the schemas are logical, and the actual data is stored in bit format on the disk. Physical data independence is the power to change the physical data without impacting the schema or logical data.
 eg. in case we want to change or upgrade the storage system itself − suppose we want to replace hard-disks with SSD − it should not have any impact on the logical data or schemas.
+
+## Abstraction:
+System hides certain information (underline complexicities) so that user doesn't have to focus on functions but just make use of it. 
+
+Abstraction is in DBMS also.
+eg. View of database is diff for each of the user. No need to know how the data is stored.
+
+## 3 level schema architecture:
+1. physical level:
+   * Lowest level of abstraction describes how the data is stored.
+   * low level data structure used.
+   * it has physical schema which describes physical storage structure of DB.
+   * Talks about storage allocation, data compression, and encryption
+   * Goal: We muct define algo that allows efficiant access to data.
+
+2. Conceptual/logical level.
+   * the conceptual schema describes the design of the database at the conceptual level and WHAT DATA IS STORED AND RELATION B/W THEM.
+   * goal: ease to use.
+
+3. View level/External Level:
+   * highest level of abstraction.
+   * not aware if other two layers.
+   * different view for different end-users.
+
+
+     ![Schema](https://github.com/rrairajeev/SQL/assets/169693667/c2fbd8ee-df93-409c-a7c2-03b33ec7ae2f)
+
+
+## Instance of DB:
+  db at any given point of time.
+
+
+## Data Model:
+* way to describe the design of the DB at logical level.
+* a collection of conceptual tools for describing data, data relationships, data semantics and consistancy constrainsts.
+* eg. ER Model, Relational models, object-oriented model, object-relational data model.
+
+1:56:04
